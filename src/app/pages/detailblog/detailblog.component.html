@@ -1,0 +1,29 @@
+<div class="container">
+
+<div class="back">
+    <a href="javascript:void(0)" (click)="goBack()">
+        <img src="./assets/img/back.png" alt="Icon Back">
+    </a>
+</div>
+
+<div class="load">
+    <div *ngIf="loading">
+      <img src="../../../assets/img/load-animated.svg" alt="Loading">
+    </div>
+</div>
+
+        <div class="content-detailblog">
+            <h2>{{ detailblog.title }}</h2>
+            <div class="author">
+                {{ detailblog.author }}
+            </div>
+            <div class="dates">
+                {{ detailblog.created_at | date: "dd MMM yyyy hh:mm" }}
+            </div>
+                <img src="{{ detailblog.image_url }}" width="100%" alt="Image">
+            <div class="content">
+                <p [innerHTML]="detailblog.content"></p>
+            </div>
+        </div>
+
+</div>

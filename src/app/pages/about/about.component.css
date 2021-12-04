@@ -1,0 +1,185 @@
+/* about  */
+
+.container {
+    padding: 50px;
+}
+
+.about h2 {
+    font-size: 26px;
+    color: #FE6700;
+    text-align: center;
+}
+
+.about p {
+    font-size: 16px;
+    padding: 30px;
+    margin: 20px 50px;
+    text-align: center;
+}
+
+/* visi */
+
+.visi h2{
+    color: #FE6700;
+}
+
+.visi {
+    padding: 30px;
+    margin: 30px 60px;
+    display: grid;
+    grid-template-columns: 40% 60% auto;
+    justify-content: space-between;
+}
+
+.visi img {
+    float: left;
+    display: flex;
+    width: 350px;
+    height: 350px;
+}
+
+.content-visi {
+    padding: 40px;
+}
+
+.content-visi h2 {
+    font-size: 26px;
+}
+
+.content-visi p {
+    font-size: 16px;
+    float: right;
+    text-align: justify;
+}
+
+/* misi */
+
+.misi h2{
+    color: #FE6700;
+    float: right;
+    /* margin-right: 10px; */
+}
+
+.misi {
+    padding: 30px;
+    margin: 30px 60px;
+    display: grid;
+    grid-template-columns: 60% 40% auto;
+    justify-content: space-between;
+}
+
+.misi img {
+    float: right;
+    display: flex;
+    width: 350px;
+    height: 350px;
+}
+
+.content-misi {
+    padding: 40px;
+}
+
+.content-misi h2 {
+    font-size: 26px;
+}
+
+.content-misi p {
+    font-size: 16px;
+    float: left;
+    text-align: justify;
+}
+
+/* responsive about */
+
+@media only screen and (max-width: 767px) {
+
+    .container {
+        padding: 30px;
+    }
+
+    .about p {
+        margin: auto;
+        text-align: justify;
+    }
+}
+
+/* responsive visi */
+
+@media only screen and (max-width: 1024px) {
+
+    .misi {
+        padding: 10px;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .misi img {
+        width: auto;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .content-misi {
+        padding: 20px;
+        display: block;
+        margin: auto;
+    }  
+}
+
+@media only screen and (max-width: 767px) {
+
+    .visi {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin: auto;
+    }
+
+    .content-visi {
+        text-align: center;
+    }  
+}
+
+/* responsive misi */
+
+@media only screen and (max-width: 1024px) {
+
+    .visi {
+        padding: 10px;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .visi img {
+        width: auto;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .content-visi {
+        padding: 20px;
+        display: block;
+        margin: auto;
+    }  
+}
+
+@media only screen and (max-width: 767px) {
+
+    .misi {
+        margin: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "img"
+            "content-misi";
+    }
+
+    .content-misi {
+        text-align: center;
+    } 
+    
+    .misi h2 {
+        float: none;
+    }
+}

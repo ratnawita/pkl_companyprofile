@@ -1,0 +1,111 @@
+body {
+    background:black;
+    margin-top: 50px;
+    color:white;
+    display: grid;
+    height: 40%;
+    grid-template-areas: 
+    "footer"
+    "copyright";
+}
+
+/* footer */
+
+footer {
+    background: #FE6700; 
+}
+
+ul {
+    display: grid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(4, auto); /*artinya :  grid-template-columns: auto auto auto auto */
+    grid-template-rows: repeat(2, auto);
+}
+
+ul li {
+    padding: 2em;
+    color:#FE6700;
+}
+
+ul li span {
+    font-size: 22px;
+    display: block;
+    color: white;
+    margin-bottom: 15px;
+}
+
+ul li p {
+    font-size: 14px;
+    color: white;
+}
+
+.icon-sosmed {
+    margin-right: 10px;
+}
+
+
+/* copyright */
+
+.copyright p {
+    font-size: 18px;
+    padding: 10px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* properti css konten bagian bawah */
+
+footer {
+    grid-area: footer;
+}
+
+.copyright {
+    grid-area: copyright;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1024px) {
+    
+    body {
+        height: 110%;
+        grid-template-areas: 
+            "footer"
+            "copyright";
+    }
+
+    ul {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .copyright p {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }  
+}
+
+@media only screen and (max-width: 767px) {
+    
+    body {
+        height: 110%;
+        grid-template-areas: 
+            "footer"
+            "copyright";
+    }
+
+    ul {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .copyright p {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }  
+}
